@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Summary</title>
+    <link rel="stylesheet" href="summary.css" />
+  </head>
+
+  <body>
+    <nav class="navbar">
+      <h1>Short-Terms</h1>
+      <div class="links">
+        <a href="https://github.com/SirusCodes/short-terms">Github</a>
+      </div>
+    </nav>
+    <div class="content">
+      <div class="slider-components">
+        <h2>Summary</h2>
+        <label for="slider"></label>
+        <!-- <input type="text" id="content" name="content" /> <br /> -->
+        <div>
+          <input
+            type="range"
+            step="10"
+            id="length"
+            name="slider"
+            list="tickmarks"
+            title="Summarize size"
+            placeholder="20%"
+            value="20"
+          />
+          <datalist id="tickmarks">
+            <option value="0" label="0%"></option>
+            <option value="10"></option>
+            <option value="20"></option>
+            <option value="30"></option>
+            <option value="40"></option>
+            <option value="50" label="50%"></option>
+            <option value="60"></option>
+            <option value="70"></option>
+            <option value="80"></option>
+            <option value="90"></option>
+            <option value="100" label="100%"></option>
+          </datalist>
+          <label id="demo"></label>
+          <span>%</span>
+        </div>
+        <div class="details"></div>
+      </div>
+      <button class="re-summarize" id="re-summarize" title="Re-summarize">
+        Summarize
+      </div>
+      <br /><br />
+      <br /><br />
+      </button>
+    <script src="summary.js"></script>
+  </body>
+</html>

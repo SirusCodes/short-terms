@@ -1,30 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Short Terms</title>
     <link rel="stylesheet" href="popup.css" />
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="container">
-        <h2>Short Terms</h2>
-        <div id="list"></div>
+      <h2>Short Terms</h2>
+      <div id="list"></div>
 
-        <form id="form">
-            <label for="content">Content:</label>
-            <input type="text" id="content" name="content" /> <br />
-            <input type="range" id="length" min="1" max="100" value="50" />
-            <br /><br />
-            <input type="submit" value="Submit" />
-            <!-- https://lqb1ye.deta.dev/docs -->
-        </form>
+      <form id="form">
+        <!-- <label for="content">Content:</label> -->
+        <input
+          type="textarea"
+          id="content"
+          name="content"
+          rows="3"
+          cols="40"
+          placeholder="Enter your text here"
+        />
+        <br /><br /><br />
+        <input class="popup-btn" type="submit" value="Submit" />
+        <!-- https://lqb1ye.deta.dev/docs -->
+      </form>
+      <button class="popup-btn" id="summarize-page" title="Summarize this page">
+        Summarize this page
+      </button>
     </div>
     <div id="response"></div>
     <script src="popup.js"></script>
-</body>
-
+  </body>
 </html>
