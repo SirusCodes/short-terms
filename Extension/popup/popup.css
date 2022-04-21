@@ -1,0 +1,10 @@
+body{
+    color: white;
+    background: black;
+    width: 300px;
+    height: 300px;
+}
+
+#list{
+    list-style: none;
+}

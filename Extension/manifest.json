@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "Short Terms",
+  "version": "1.0.0",
+  "description": "Summarize your webpage.",
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": ["storage"],
+  "action": {
+    "default_popup": "popup/popup.html",
+    "default_icon": "icon.png"
+  }
+}
