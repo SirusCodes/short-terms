@@ -39,7 +39,7 @@
     color: #f1356d;
 }
 
-.content {
+.content, .details {
     max-width: 600px;
     margin: 40px auto;
     padding: 20px;
@@ -147,5 +147,9 @@
 .content {
     display: flex;
     flex-direction: row;
+    align-items: center;
+}
+
+.details {
     align-items: center;
 }

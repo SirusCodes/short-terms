@@ -9,11 +9,11 @@ body {
     list-style: none;
 }
 
-/* 
+
 input[type="textarea"] {
-    height: 200px;
-    width: 80%;
-} */
+    height: 150px;
+    width: 250px;
+}
 
 .popup-btn {
     background-color: #f1356d;

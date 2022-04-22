@@ -19,17 +19,21 @@
           type="textarea"
           id="content"
           name="content"
-          rows="3"
-          cols="40"
+          rows="5"
+          cols="200"
           placeholder="Enter your text here"
         />
         <br /><br /><br />
         <input class="popup-btn" type="submit" value="Submit" />
         <!-- https://lqb1ye.deta.dev/docs -->
+        <button
+          class="popup-btn"
+          id="summarize-page"
+          title="Summarize this page"
+        >
+          Summarize this page
+        </button>
       </form>
-      <button class="popup-btn" id="summarize-page" title="Summarize this page">
-        Summarize this page
-      </button>
     </div>
     <div id="response"></div>
     <script src="popup.js"></script>
